@@ -1,0 +1,209 @@
+@import url(assets/fonts/Roboto.zip);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(245, 245, 209);
+
+}
+h1{
+    font-size: 30px;
+    font-style: italic;
+    color: palevioletred;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+padding-block: 15px;  
+}
+.titulo img{
+width: 30px;
+background-position: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center; */
+  border-radius:10px;
+  margin-inline: 145px;
+}
+
+h2{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(124, 81, 156);
+    margin-block: 15px;                                                                                                                       px;
+
+}
+span{
+    color: rgb(190, 144, 232);
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    font-size: 14px;
+    color: brown;
+    cursor: pointer;
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding: 10px 15px ;
+    gap: 15px;
+    margin-bottom: 20px;
+    border: 1px solid salmon;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+    background-color:floralwhite;
+    padding: 4px 5px;
+    border-radius: 4px;
+    box-shadow: 1px 8px 5px -6px rgba(0,0,0,0.75);
+}
+
+img{
+width:100%;
+border-radius: 3px;
+max-width:300px;
+
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+/* div{
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr,1fr;
+} */
+p{
+    font-size: 13px;
+    font-style:italic;
+    color: palevioletred;
+    text-align: start;
+    font-family: "roboto", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}    
+
+.cardsfotos button{
+    background-color: antiquewhite;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    margin:auto;
+    color: mediumvioletred;
+    padding: 6px 8px;
+    font-size: 12px;
+
+}
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+   
+}
+h4{
+    font-size: 23px;
+    font-style: oblique;
+    color:rgb(148, 121, 173);
+    text-align: center;
+    
+}
+.grid-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+.register-form{
+width: 40%;
+margin: auto;
+border-radius: 10px;
+border: 3px solid plum;
+gap:10px;
+padding: 4px;
+background-color: rgb(246, 241, 251);
+margin-bottom: 20px;
+}
+.register-form>div{
+    gap: 3px;
+}
+.register-form input, .register-form button{
+    border:2px solid plum;
+    border-radius: 9px;
+    padding: 10px 20px;
+    background-color:rgb(241, 245, 252) ;
+}
+.register-form button{
+    background-color: beige;
+    color: rgb(78, 94, 109);
+}
+.register-form label{
+    font-size: 16px;
+    color:rgb(88, 100, 113)
+}
+footer{ 
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+   background-color: beige;
+
+}
+.contactos{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: gray;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding:2px 4px;
+    list-style-type: none;
+    
+}
+div button{
+    padding: 8px 14px;
+    background-color: azure;
+    border: 2px solid navy;
+    border-radius: 4px;
+    margin: 14px;
+}
+.informacion{
+    font-size: 9px;
+    color:black;
+    margin-top: 14px;
+}
+.cards-container{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+   align-items: stretch;
+   margin-bottom: 40px;
+}
+.cardsfotos img{
+    height: 200px;
+    object-fit:cover;
+}
+.iconos{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+}
