@@ -2,76 +2,78 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 3px;
     box-sizing: border-box;
     
 }
+header{
+    background-image: url(assets/img/lunares.webp);
+}
 .titulo{
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    background-color: rgb(245, 245, 209);
 
+}
+.titulo > img{
+    width:5%;
+    height: 5%;
+    margin-bottom: 60px;
+    margin-top: 10px;
 }
 h1{
-    font-size: 30px;
+    font-size: 50px;
     font-style: italic;
     color: palevioletred;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-padding-block: 15px;  
+    width: 75%;
+    justify-content:start;
+padding-block: 10px; 
+ 
 }
-.titulo img{
-width: 30px;
-background-position: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center; */
-  border-radius:10px;
-  margin-inline: 145px;
-}
-
-h2{
+ .titulo > p{
     font-size: 15px;
-    text-align: center;
-    color: rgb(124, 81, 156);
-    margin-block: 15px;                                                                                                                       px;
+    color: rgb(123, 38, 38);
+    margin top: 5px;
+    width: 100%; 
+   text-align: center;                                                                                                 px;
 
 }
 span{
-    color: rgb(190, 144, 232);
+    color:mediumvioletred;
     font-size: 20px;
-}
-ul{
-    display: flex;
-    font-size: 14px;
-    color: brown;
-    cursor: pointer;
-    justify-content: space-around;
-    align-content: space-around;
-    justify-items: center;
-    align-items: center;
-    width: 60%;
-    margin: auto;
-    padding: 10px 15px ;
-    gap: 15px;
-    margin-bottom: 20px;
-    border: 1px solid salmon;
-    border-radius: 6px;
-    flex-wrap: wrap;
-}
-li{
-    list-style: none;
-    background-color:floralwhite;
-    padding: 4px 5px;
-    border-radius: 4px;
-    box-shadow: 1px 8px 5px -6px rgba(0,0,0,0.75);
+   font-weight: bold;
 }
 
+.Barra{
+    display:flex;
+    font-size: 14px;
+    cursor: pointer;
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    gap: 4px;
+    margin-top: 55px;
+   
+}
+a{
+    text-decoration: none;
+    color: brown;
+   
+  
+}
+.Barra > li{
+    list-style: none;
+    background-color:floralwhite;
+    padding: 3px 4px;
+    border-radius: 4px;
+    box-shadow: 1px 8px 5px -6px rgba(0,0,0,0.75);
+    text-align: center;
+   
+
+}
+h2{
+    color: rgb(164, 115, 81);
+    font-size: 30px;
+    margin-top: 20px;
+}
 img{
 width:100%;
 border-radius: 3px;
@@ -83,12 +85,8 @@ img:hover{
     transform: scale(1.1);
 }
 
-/* div{
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,1fr;
-} */
 p{
-    font-size: 13px;
+    font-size: 15px;
     font-style:italic;
     color: palevioletred;
     text-align: start;
@@ -98,7 +96,7 @@ p{
 
 }    
 
-.cardsfotos button{
+.cardsfotos > button{
     background-color: antiquewhite;
     border: 2px solid salmon;
     border-radius: 8px;
@@ -111,49 +109,127 @@ p{
 button:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+h3{
+    color:rgb(164, 115, 81);
+    font-style: oblique;
+}
+.importante{
+    color: rgb(179, 144, 144);
+}
+.servicios ul{
+    width: 100%;
+    color: rgb(151, 98, 151);
+    padding:2px 4px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit(150px,2fr));
    
+} 
+.servicios > li{
+    list-style: none;
+    text-decoration: underline;
+}
+.information > img{
+    width: 10%;
+    border-radius: 15px;
 }
 h4{
+    font-size: 30px;
+    color:rgb(164, 115, 81) ;
+}
+h5{
+    color: rgb(164, 115, 81);
+    font-size: 30px;
+}
+.alergy > ul{
+    color: rgb(132, 131, 131);
+  
+}
+.alergy > img{
+    width: 8%;
+    margin-inline-start: 130px;
+    margin-bottom: 30px;  
+}
+h6{
     font-size: 23px;
     font-style: oblique;
-    color:rgb(148, 121, 173);
+    color:rgb(143, 103, 181);
     text-align: center;
-    
 }
-.grid-container{
+.rellenos  >ul{
+    color: rgb(132, 129, 129);
+    list-style: decimal;
+}
+ol{
+    width: 75%;
+}
+ol > img{
+    width: 12%;
+    gap: 10px;
+}
+ol p{
+    color:slategrey;
+}
+.grid-container, .pedido{
     display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
     justify-items: center;
     align-content: center;
+   
 }
 .register-form{
-width: 40%;
+width: 50%;
 margin: auto;
 border-radius: 10px;
 border: 3px solid plum;
 gap:10px;
 padding: 4px;
-background-color: rgb(246, 241, 251);
+background-color: rgb(254, 244, 251);
 margin-bottom: 20px;
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 .register-form>div{
-    gap: 3px;
+    gap: 5px;
 }
 .register-form input, .register-form button{
     border:2px solid plum;
     border-radius: 9px;
     padding: 10px 20px;
-    background-color:rgb(241, 245, 252) ;
+    background-color:rgb(255, 249, 235) ;
 }
 .register-form button{
     background-color: beige;
-    color: rgb(78, 94, 109);
+    color: rgb(102, 128, 154);
+    font-weight: bold;
+
 }
 .register-form label{
     font-size: 16px;
-    color:rgb(88, 100, 113)
+    color:rgb(102, 126, 150)
+}
+.pedido input{
+    padding: 70px 20px;
+
+   
+   
+}
+ol li{
+    color:rgb(162, 122, 21);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 30%;
+    background-color: rgb(249, 244, 235);
+    border-radius: 5px;
+
+}
+@media screen {
+    min-width: ;
 }
 footer{ 
     display: grid;
@@ -175,7 +251,7 @@ footer{
     list-style-type: none;
     
 }
-div button{
+div > button{
     padding: 8px 14px;
     background-color: azure;
     border: 2px solid navy;
@@ -193,13 +269,14 @@ div button{
    gap: 20px;
    align-items: stretch;
    margin-bottom: 40px;
+   padding: 10px;
 }
 .cardsfotos img{
     height: 200px;
     object-fit:cover;
 }
 .iconos{
-    width: 20px;
+    width: 40px;
     display: flex;
     justify-content: center;
     justify-items: center;
