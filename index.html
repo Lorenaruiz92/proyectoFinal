@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="LorenaRuiz">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
     <meta name="keywords" content="dulces, pasteles, tartas fondant, fiestas, decoracion globos, cupcakes">
     <meta name="description" content="Es una pagina web de dulces y servicio para eventos">
     <meta name="generator" content="Visual Studio Code">
@@ -21,13 +20,13 @@
         <nav>
             <ul class="Barra">
                 <li>
-                    <a href="#">Quinenes somos</a>
+                    <a href="#">Quiénes somos</a>
                 </li>
                 <li>
                     <a href="#">Contacto</a>
                 </li>
                 <li>
-                    <a href="#">Localizacion</a>
+                    <a href="#">Localización</a>
                 </li>
                 <li>
                     <a href="#">Novedades</a>
@@ -35,10 +34,11 @@
             </ul>
         </nav>
     </header>
-    <h2>¿Quieres hacer de tu evento un recuerdo dulce?</h2>
-    <p>Prueba nuestra amplia variedad de productos y aprovechate de un <span>15% de descuento</span> en tu primer
-        pedido:</p>
-    <main>
+    <main class="productos">
+        <h2>¿Quieres hacer de tu evento un recuerdo dulce?</h2>
+        <p>Prueba nuestra amplia variedad de productos y aprovechate de un <span>15% de descuento</span> en tu primer
+            pedido:</p>
+
         <div class="cards-container">
             <article class="cardsfotos">
                 <img src="assets/img/deliciosos-cupcakes-coloridos-cubiertos-glaseado_23-2149667685.webp"
@@ -94,7 +94,7 @@
             <article class="cardsfotos">
                 <img src="assets/img/960c55d1c19ceafb41bad1c735c82afa.webp" alt="donuts">
                 <div>
-                    <p>Decoracion Donuts</p>
+                    <p>Decoración Donuts</p>
                     <button>Ver</button>
 
                 </div>
@@ -107,164 +107,227 @@
                 </div>
             </article>
         </div>
+
+        <h3>¿Quieres decorar tu evento?</h3>
+
+        <p class="importante">Si lo desea, tambien nos hacemos cargo de complementar y decorar todo el evento.
+            Marque el servicio que quisiera contratar:</p>
+
+
         <section>
-            <h3>¿QUIERES DECORAR TU EVENTO?</h3>
-
-            <p class="importante">Si lo desea, tambien nos hacemos cargo de decorar todo el evento.
-                Marque el servicio que quisiera contratar:</p>
-
             <div class="servicios">
-                <ul>
 
-                    <li>ARCO DE GLOBOS</li>
-                    <div class="information">
-                        <img src="assets/img/arco globos.webp" alt="globos">
+                <article class="information">
+                    <label>ARCO DE GLOBOS</label>
+                    <img src="assets/img/arco globos.webp"alt="globos">
+                    <div>
                         <p>Infinitas posibilidades de montar el arco de globos para tu gran mesa. Formado por globos de
                             distintos colores, texturas y tamaños.</p>
-                        <p>35€ <input type="checkbox"></p>
+                        <p class="precio">35€ <input type="checkbox"></p>
                     </div>
-
-                    <li>ADORNOS TEMATICA</li>
-                    <div class="information">
-                        <img src="assets/img/adornos.webp" alt="adornos">
-                        <p>Para una decoracion top, no pueden faltar los adornos relacionados con la tematica elegida.
-                            Existen muchas opciones para decorar tu evento y hacerlo aun mas especial. </p>
-                        <p>12€ <input type="checkbox"></p>
+                </article>
+                <article class="information">
+                    <label>ADORNOS TEMÁTICA</label>
+                    <img src="assets/img/adornos.webp" alt="adornos">
+                    <div>
+                        <p>Para una decoración top, no pueden faltar los adornos relacionados con la temática elegida.
+                            Existen muchas opciones para decorar tu evento y hacerlo aun más especial. </p>
+                        <p class="precio">12€ <input type="checkbox"></p>
                     </div>
-
-                    <li>CESTAS Y FLORES</li>
-                    <div class="information">
-                        <img src="assets/img/flores.webp" alt="flores">
-                        <p>¡NOVEDAD! Hemos incorporado el servicio que tanto esta de moda para dar a tu evento un toque
-                            mas romantico o bohemio. Cestas de diferentes tamaños y estilos repletas de amplia gama de
+                </article>
+                <article class="information">
+                    <label>CESTAS Y FLORES</label>
+                    <img src="assets/img/flores.webp" alt="flores">
+                    <div>
+                        <p><span>¡NOVEDAD!</span> Hemos incorporado el servicio que tanto esta de moda para dar a tu
+                            evento un toque
+                            mas romántico o bohemio. Cestas de diferentes tamaños y estilos repletas de amplia gama de
                             flores silvestres que haran que tu mesa luzca preciosa.</p>
-                        <p>20€ <input type="checkbox"></p>
+                        <p class="precio">20€ <input type="checkbox"></p>
                     </div>
-
-                    <li>MENAJE</li>
-                    <div class="information">
-                        <img src="assets/img/menaje.webp" alt="menaje">
-                        <p>Completaremos el menaje con los colores y tematicas del evento para que no falte ni un
+                </article>
+                <article class="information">
+                    <label>MENAJE</label>
+                    <img src="assets/img/menaje.webp" alt="menaje">
+                    <div>
+                        <p>Completaremos el menaje con los colores y temáticas del evento para que no falte ni un
                             detalle.</p>
-                        <p>15€ <input type="checkbox"></p>
+                        <p class="precio">15€ <input type="checkbox"></p>
                     </div>
-
-                </ul>
+                </article>
+                <article class="information">
+                    <label>HUMOS DE COLORES</label>
+                    <img src="assets/img/humos.webp" alt="humos">
+                    <div>
+                        <p>Pidenos los colores que mas os guste o necesiteis para vuestra fiesta, son fáciles de usar y
+                            duran unos 30 segundos en salir. </p>
+                        <p class="precio">9,50€ und <input type="checkbox"></p>
+                    </div>
+                </article>
+                <article class="information">
+                    <label>DETALLES PERSONALIZADOS</label>
+                    <img src="assets/img/detalles.webp" alt="regalitos">
+                    <div>
+                        <p> Regala detalles personalizados a tus invitados, hay diferentes modelos y temáticas segun tu
+                            evento. </p>
+                        <p class="precio">1,50€ und <input type="checkbox"></p>
+                    </div>
+                </article>
             </div>
-
-            <h4>¿Alergias o intolerancias?</h4>
-            <div class="alergy">
-                <p> En nuestra variedad de dulces podeis encontrar:</p>
-                <ul>
-                    <li>SIN GLUTEN</li>
-                    <img src="assets/img/gluten.webp" alt="gluten free">
-                    <li>SIN LACTOSA</li>
-                    <img src="assets/img/lactosa.webp" alt="lactosa">
-                    <li>SIN AZUCAR</li>
-                    <img src="assets/img/sugar-cubes-in-circle-icon-for-sugar-free-product-package-design.webp"
-                        alt="sugar">
-                    <li>SIN HUEVO</li>
-                    <img src="assets/img/egg.webp" alt="egg">
-                </ul>
-                <p>*Es necesario indicar alergias o intolerancias cuando se realice el pedido.</p>
-            </div>
-
-            <h5>¿Que sabores de rellenos y topping puedo elegir?</h5>
-            <div class="rellenos">
-                <ul>
-                    <li>Nutella <a href="http://" target="_blank">Enlace de Nutella</a></li>
-                    <li>Ferrero</li>
-                    <li>Vainilla</li>
-                    <li>Lottus</li>
-                    <li>Chocolate blanco</li>
-                    <li>Oreo</li>
-
-                </ul>
-                <p>Puedes atreverte a mezclar sabores o si quieres te aconsejamos cuales podeis mezclar para un
-                    resultado increiblemente irresistible.</p>
-
-            </div>
-            <p class="importante">*IMPORTANTE : Para el servicio de transporte es necesario indicar la dirección del
-                evento, ya que según la distancia se incrementara el precio final por gastos de envio.*</p>
-            <p>Indicamos importe extra segun kilometros desde nuestra empresa:
-            <ol>
-                <li>Hasta 10km : Gratuito</li>
-                <li>De 10km a 25km : 10€</li>
-                <img src="assets/img/envio_entrega_icon_209802.webp" alt="envio">
-                <p class="coment">Siempre puntuales.</p>
-                <li>De 25km a 45km : 20€</li>
-                <li>De 45km a 60km : 30€</li>
-                <img src="assets/img/free-temperatura-fria-3186180-2681232.webp" alt="frio">
-                <p class="coment">Tu pedido enviado a temperatura exacta para su apta conservacion.</p>
-                <li>Mas de 60km : 50€</li>
-
-            </ol>
-            </p>
         </section>
 
-        <p class="importante">Haznos una propuesta de pedido, cuentanos tus gustos y preferencias, elige una tematica o
+
+        <h4>¿Alergias o intolerancias?</h4>
+
+        <p> En nuestra variedad de dulces podeis encontrar:</p>
+        <div class="alergy">
+
+            <div>
+                <img src="assets/img/gluten.webp" alt="gluten free">
+                <p class="titulo">SIN GLUTEN</p>
+            </div>
+            <div>
+                <img src="assets/img/lactosa.webp" alt="lactosa">
+                <p class="titulo">SIN LACTOSA</p>
+            </div>
+            <div>
+                <img src="assets/img/sugar-cubes-in-circle-icon-for-sugar-free-product-package-design.webp" alt="sugar">
+                <p class="titulo">SIN AZUCAR</p>
+            </div>
+            <div>
+                <img src="assets/img/egg.webp" alt="egg">
+                <p class="titulo">SIN HUEVO</p>
+            </div>
+            <div class="Natural">
+                <img src="assets/img/sin-colorantes.webp" alt="sin-colorantes">
+            </div>
+            <div class="buscador">
+                <input type="text" id="busqueda" placeholder="Buscar productos..." />
+            </div>
+
+        </div>
+        <p class="indicacion">*Es necesario indicar alergias o intolerancias cuando se realice el pedido.</p>
+
+
+        <h5>¿Que sabores de rellenos y topping puedo elegir?</h5>
+        <div class="rellenos">
+            <ul>
+                <li>Nutella <a href="https://culinary.isi.com/en-US/culinary/recipe/nutella-topping"
+                        target="_blank"><button>Elegir</button></a></li>
+                <li>Ferrero <a href="https://search.brave.com/images?q=ferrero%20tooping"
+                        target="_blank"><button>Elegir</button></a></li>
+                <li>Vainilla <a
+                        href="https://www.amazon.com/-/es/relleno-instant%C3%A1neo-vainilla-paquete-unidades/dp/B000E1DSG8"
+                        target="_blank"><button>Elegir</button></a></li>
+                <li>Lottus <a href="https://www.lotusbiscoff.com/es-es/foodprofessionals/products/biscoff-topping-1kg"
+                        target="_blank"><button>Elegir</button></a></li>
+                <li>Chocolate blanco <a
+                        href="https://search.brave.com/images?q=chocolate+blanco+tooping+tarta&source=web"
+                        target="_blank"><button>Elegir</button></a></li>
+                <li>Oreo <a href="https://cookpad.com/es/recetas/14976148-tarta-oreo"
+                        target="_blank"><button>Elegir</button></a></li>
+
+            </ul>
+            <div>
+                <img src="assets/img/tooping.webp" alt="tooping">
+                <img src="assets/img/tarta-de-oreo.webp" alt="tarta">
+            </div>
+
+            <p>Puedes atreverte a mezclar sabores o si quieres te aconsejamos cuales podeis mezclar para un
+                resultado increiblemente irresistible.</p>
+
+        </div>
+
+        <p class="importante"><span>*IMPORTANTE :</span> Para el servicio de transporte es necesario indicar la
+            dirección del
+            evento, ya que según la distancia se incrementara el precio final por gastos de envio.*</p>
+        <p>Indicamos importe extra segun kilometros desde nuestra empresa: </p>
+
+        <section class="transporte">
+            <div class="transporte-info">
+                <p>Hasta 10km : Gratuito</p>
+                <p>De 10km a 25km : 10€</p>
+                <p>De 25km a 45km : 20€</p>
+                <p>De 45km a 60km : 30€</p>
+                <p>Mas de 60km : 50€</p>
+            </div>
+            <div>
+                <img src="assets/img/envio_entrega_icon_209802.webp" alt="envio">
+                <p class="coment">Siempre puntuales.</p>
+                <img src="assets/img/free-temperatura-fria-3186180-2681232.webp" alt="frio">
+                <p class="coment">Tu pedido enviado a temperatura exacta para su apta conservación.</p>
+            </div>
+        </section>
+
+        <p class="propuesta">Haznos una propuesta de pedido, cuentanos tus gustos y preferencias, elige una tematica o
             tipo de decoracion, y nos pondremos en contacto contigo en menos de 24h.</p>
-        <main>
-            <h6>· Crea tu pedido ·</h6>
-            <form class="grid-container register-form">
-                <div class="grid-container">
-                    <label>Nombre</label>
-                    <input type="text">
-                </div>
-                <div class="grid-container">
-                    <label>Apellidos</label>
-                    <input type="text">
-                </div>
-                <div class="grid-container">
-                    <label>Email</label>
-                    <input type="email">
-                </div>
-                <div class="grid-container">
-                    <label>Telefono</label>
-                    <input type="text">
-                </div>
-                <div class="grid-container">
-                    <label>Direccion Evento</label>
-                    <input type="text">
-                </div>
-                <div class="pedido">
-                    <label>Pedido</label>
-                    <input type="text">
-                </div>
-                <button>Enviar</button>
-            </form>
-        </main>
-        <footer>
-            <div class="contactos">
 
-                <button>Eco/Sostenible</button>
-
-                <button>Metodos de pago</button>
-
-                <button>Trabaja con nosotros</button>
-
-                <button>Horario atencion al cliente</button>
+        <h6>· Crea tu pedido ·</h6>
+        <form class="grid-container register-form">
+            <div class="grid-container">
+                <label>Nombre</label>
+                <input type="text">
             </div>
-            <div class="iconos">
-
-                <img src="assets/img/facebook.webp" alt="facebook">
-                <img src="assets/img/insta buena.png" alt="instagram">
-                <img src="assets/img/tik tok buena.png" alt="tik tok">
-                <img src="assets/img/twiter buena.png" alt="twiter">
-                <img src="assets/img/whatsapp-buena.png" alt="whatsapp">
+            <div class="grid-container">
+                <label>Apellidos</label>
+                <input type="text">
             </div>
+            <div class="grid-container">
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <div class="grid-container">
+                <label>Teléfono</label>
+                <input type="text">
+            </div>
+            <div class="grid-container">
+                <label>Dirección Evento</label>
+                <input type="text">
+            </div>
+            <div class="pedido">
+                <label>Pedido</label>
+                <input type="text">
+            </div>
+            <button>Enviar</button>
+        </form>
+        <div class="vip">
+            <p class="clientes"><span>SUSCRIBETE</span> y hazte cliente para aprovecharte de nuestros descuentos VIP, y
+                ademas podras enterarte en exclusiva de las NOVEDADES que vayamos sacando.</p>
+            <button>Suscribirse</button>
+        </div>
+    </main>
+    <footer>
+        <div class="contactos">
 
-            <p class="informacion">
-                Empresa con todos los certificados aprobados y disponibles.
-                Empresa con sede en España.
-                Para más seguridad no envie datos bancarios personales.
-                No se admiten pedidos con menos de 72h de antelacion. Los horarios de atencion al publico podrian
-                cambiar segun dias previos a festivos y por vacaciones.
-                Permanecemos cerrados Los Lunes por descanso del personal y festivos nacionales. Disponemos de hoja de
-                reclamaciones a su servicio si fuera necesario.
-            </p>
+            <button>Eco/Sostenible</button>
 
-        </footer>
+            <button>Metodos de pago</button>
+
+            <button>Trabaja con nosotros</button>
+
+            <button>Horario atención al cliente</button>
+        </div>
+        <div class="iconos">
+
+            <img src="assets/img/facebook.webp" alt="facebook">
+            <img src="assets/img/insta buena.png" alt="instagram">
+            <img src="assets/img/tik tok buena.png" alt="tik tok">
+            <img src="assets/img/twiter buena.png" alt="twiter">
+            <img src="assets/img/whatsapp-buena.png" alt="whatsapp">                              
+
+        </div>
+
+        <p class="información">
+            Empresa con todos los certificados aprobados y disponibles.
+            Empresa con sede en España.
+            Para más seguridad no envie datos bancarios personales.
+            No se admiten pedidos con menos de 72h de antelación. Los horarios de atención al publico podrían
+            cambiar segun dias previos a festivos y por vacaciones.
+            Permanecemos cerrados Los Lunes por descanso del personal y festivos nacionales. Disponemos de hoja de
+            reclamaciones a su servicio si fuera necesario.
+        </p>
+
+    </footer>
 
 </body>
 

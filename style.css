@@ -14,10 +14,9 @@ header{
 
 }
 .titulo > img{
-    width:5%;
-    height: 5%;
-    margin-bottom: 60px;
-    margin-top: 10px;
+    width:7%;
+    height: 8%;
+    margin-top: 25px;
 }
 h1{
     font-size: 50px;
@@ -31,10 +30,9 @@ padding-block: 10px;
  .titulo > p{
     font-size: 15px;
     color: rgb(123, 38, 38);
-    margin top: 5px;
+    margin-top: 35px;
     width: 100%; 
-   text-align: center;                                                                                                 px;
-
+   text-align: center;                                  
 }
 span{
     color:mediumvioletred;
@@ -51,28 +49,35 @@ span{
     border-radius: 6px;
     gap: 4px;
     margin-top: 55px;
-   
 }
 a{
     text-decoration: none;
     color: brown;
    
-  
 }
 .Barra > li{
     list-style: none;
     background-color:floralwhite;
-    padding: 3px 4px;
+    padding: 3px 8px;
     border-radius: 4px;
     box-shadow: 1px 8px 5px -6px rgba(0,0,0,0.75);
     text-align: center;
-   
-
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.productos {
+    width: 80%;
+    margin: auto;
+}
+.main {
+    width: 80%;
+    margin: auto;
 }
 h2{
     color: rgb(164, 115, 81);
     font-size: 30px;
     margin-top: 20px;
+    font-style: normal;
 }
 img{
 width:100%;
@@ -95,7 +100,18 @@ p{
     margin-top: 10px;
 
 }    
-
+.cards-container{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+   align-items: stretch;
+   margin-bottom: 40px;
+   padding: 10px;
+}
+.cardsfotos img{
+    height: 200px;
+    object-fit:cover;
+}
 .cardsfotos > button{
     background-color: antiquewhite;
     border: 2px solid salmon;
@@ -112,64 +128,150 @@ button:hover{
 }
 h3{
     color:rgb(164, 115, 81);
-    font-style: oblique;
+    font-style: normal;
+    font-size: 30px;
 }
 .importante{
     color: rgb(179, 144, 144);
 }
-.servicios ul{
-    width: 100%;
-    color: rgb(151, 98, 151);
-    padding:2px 4px;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit(150px,2fr));
-   
-} 
-.servicios > li{
-    list-style: none;
-    text-decoration: underline;
+.servicios {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+   align-items: stretch;
+   margin-bottom: 40px;
+   padding: 10px;
 }
 .information > img{
-    width: 10%;
+    height: 200px;
+    object-fit:cover;
     border-radius: 15px;
+    margin-top: 8px;
+}
+.information > label{
+    color: rgb(139, 44, 139);
+    text-decoration: underline;
+   margin: 5px 25px;
+}
+div > p{
+    color: rgb(169, 92, 92);
+    text-align: justify;
+}
+.precio{
+    color: rgb(139, 44, 139);
 }
 h4{
     font-size: 30px;
     color:rgb(164, 115, 81) ;
 }
+
+.alergy{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    align-items: stretch;
+    margin-bottom: 25px;
+    padding: 10px;
+    
+ }
+
+.titulo{
+    color: rgb(132, 131, 131);
+  padding: 2px 90px;
+}
+.alergy > div img{
+    width: 60% ;
+    margin-bottom: 6px;     
+}
+.alergy, .natural{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+.buscador{
+    border: 2px solid rgb(37, 134, 134);
+    background-color: azure;
+    border-radius: 8px;
+}
+.indicacion{
+    color: rgb(156, 38, 154);
+    margin-bottom: 19px;
+   
+}
 h5{
     color: rgb(164, 115, 81);
     font-size: 30px;
+    margin-bottom: 25px;
 }
-.alergy > ul{
-    color: rgb(132, 131, 131);
+
+.rellenos{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 10px;
+    align-items: stretch;
+    margin-bottom: 40px;
+    padding: 10px;
+ }   
+.rellenos  >ul{
+    color: rgb(110, 94, 44);
+    list-style: decimal;
+    margin-top: 15px;
+   
+}
+ .rellenos > ul button{
+background-color: antiquewhite;
+color: brown;
+border: 2px solid chocolate;
+padding: 4px 20px;
+border-radius: 4px;
+margin: 14px;
+}
+.rellenos > div img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;  
   
 }
-.alergy > img{
-    width: 8%;
-    margin-inline-start: 130px;
-    margin-bottom: 30px;  
+.rellenos > p{
+    text-align: center;
+    margin-top: 90px;
+}
+.transporte {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.transporte > div > img {
+    width: 100px;
+}
+
+.transporte-info {
+    width: 80%;
+    background-color: rgb(254, 248, 238);
+    border-radius: 20px;
+}
+.transporte-info > p{
+    text-align: center;
+    color: rgb(109, 68, 6);
+}
+.coment{
+    color: rgb(9, 9, 109);
+}
+.propuesta{
+    font-style: normal;
+    color:maroon ;
 }
 h6{
     font-size: 23px;
     font-style: oblique;
     color:rgb(143, 103, 181);
     text-align: center;
-}
-.rellenos  >ul{
-    color: rgb(132, 129, 129);
-    list-style: decimal;
-}
-ol{
-    width: 75%;
-}
-ol > img{
-    width: 12%;
-    gap: 10px;
-}
-ol p{
-    color:slategrey;
 }
 .grid-container, .pedido{
     display: grid;
@@ -182,6 +284,7 @@ ol p{
 }
 .register-form{
 width: 50%;
+min-width: 360px;
 margin: auto;
 border-radius: 10px;
 border: 3px solid plum;
@@ -212,24 +315,27 @@ grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
 .pedido input{
     padding: 70px 20px;
-
-   
-   
 }
-ol li{
-    color:rgb(162, 122, 21);
+.vip{
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    width: 30%;
-    background-color: rgb(249, 244, 235);
-    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 
 }
-@media screen {
-    min-width: ;
+.clientes{
+    font-family: "Roboto", sans-serif;
+    color: rgb(9, 9, 104);
+    font-style: normal;
+}
+.vip > button{
+    background-color: rgb(205, 4, 128);
+    color: azure;
+    border-radius: 8px;
+    border-color: rgb(86, 22, 70);
+    margin: 10px 20px;
+    font-weight: bold;
+    padding: 20px;
+
 }
 footer{ 
     display: grid;
@@ -256,25 +362,9 @@ div > button{
     background-color: azure;
     border: 2px solid navy;
     border-radius: 4px;
-    margin: 14px;
+    margin: 10px 8px;
 }
-.informacion{
-    font-size: 9px;
-    color:black;
-    margin-top: 14px;
-}
-.cards-container{
-    display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap: 20px;
-   align-items: stretch;
-   margin-bottom: 40px;
-   padding: 10px;
-}
-.cardsfotos img{
-    height: 200px;
-    object-fit:cover;
-}
+
 .iconos{
     width: 40px;
     display: flex;
@@ -283,4 +373,9 @@ div > button{
     align-items: center;
     align-content: center;
     gap: 15px;
+}
+.información{
+    font-size: 9px;
+    color:black;
+    margin-top: 14px;
 }
